@@ -1,17 +1,64 @@
-html {
-  width: 100%;
-  height: auto; }
-  html body {
-    width: 100%;
-    box-sizing: border-box;
-    height: auto;
-    padding: 20px;
+body {
+  margin: 0 auto;
+  padding: 20px 40px;
+  color: #222;
+  font-family: 'Open Sans'; }
+
+.header {
+  padding-right: 10px;
+  margin-bottom: 10px; }
+  .header #title {
+    float: right;
+    font-size: 4em;
+    font-family: 'Pacifico';
+    margin: auto; }
+
+.navigaiton {
+  background-color: red;
+  margin: 0; }
+  .navigaiton ul {
+    list-style-type: none;
     margin: 0;
-    font-family: "open sans", helvetica, Sans-Serif;
-    color: #333; }
-    html body .navigation {
-      width: 100%;
-      height: auto;
-      background-color: red; }
+    padding: 0;
+    overflow: hidden;
+    text-align: left; }
+    .navigaiton ul li {
+      font-size: 16px;
+      float: left;
+      display: inline;
+      padding: 20px 16px 5px 16px; }
+      .navigaiton ul li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 20px 16px 5px 16px; }
+        .navigaiton ul li a:hover {
+          background-image: url(../img/rabbit_outline.png);
+          background-repeat: no-repeat;
+          background-position: center;
+          text-decoration: none; }
+
+.dot {
+  width: 100%;
+  height: 10px;
+  background-image: url("../img/dotted.png");
+  background-repeat: repeat-x;
+  margin-bottom: 20px; }
+
+.content {
+  background-color: blue;
+  width: 100%;
+  min-height: 500px;
+  padding: 10px;
+  box-sizing: border-box; }
+
+.footer {
+  position: fixed;
+  bottom: 0px;
+  right: 40px;
+  left: 40px; }
+  .footer p {
+    font-size: 0.5em;
+    color: #888;
+    float: right; }
 
 /*# sourceMappingURL=custom.css.map */
