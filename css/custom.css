@@ -1,8 +1,17 @@
 body {
   margin: 0 auto;
-  padding: 20px 40px;
+  padding: 20px 80px;
   color: #222;
   font-family: 'Open Sans'; }
+
+.button {
+  background-color: red;
+  color: white;
+  padding: 8px 10px;
+  text-decoration: none;
+  border-radius: 4px; }
+  .button:hover {
+    color: #222; }
 
 .header {
   padding-right: 10px;
@@ -45,20 +54,117 @@ body {
   margin-bottom: 20px; }
 
 .content {
-  background-color: blue;
+  margin-bottom: 60px;
   width: 100%;
   min-height: 500px;
   padding: 10px;
   box-sizing: border-box; }
 
 .footer {
-  position: fixed;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-top: 1px solid #222;
+  clear: both;
+  position: static;
   bottom: 0px;
-  right: 40px;
+  right: 60px;
   left: 40px; }
   .footer p {
     font-size: 0.5em;
     color: #888;
     float: right; }
+
+.about img {
+  margin: 20px;
+  float: right;
+  display: inline-block; }
+
+.adoption #policy {
+  margin-right: 20px;
+  float: left;
+  width: 48%; }
+.adoption #priceing {
+  float: right;
+  width: 48%; }
+.adoption #gallery {
+  padding: 0 40px;
+  width: 100%;
+  margin: auto; }
+  .adoption #gallery img {
+    width: 200px;
+    margin: 20px; }
+
+.help .giveALittle {
+  margin: 30px 60px;
+  float: left; }
+  .help .giveALittle a img {
+    height: 150px;
+    width: auto; }
+.help .bank {
+  margin: 30px 60px;
+  float: left; }
+.help .items {
+  margin: 30px 60px;
+  float: left; }
+.help .sponsor {
+  width: 100%;
+  clear: both; }
+  .help .sponsor .sponsorList {
+    margin: 0 60px;
+    float: left; }
+  .help .sponsor .sponsorDeet {
+    width: 50%;
+    float: left; }
+.help .fostering {
+  clear: both; }
+.help .merch {
+  margin: 60px 0; }
+  .help .merch .bubble {
+    width: 48%;
+    float: left; }
+    .help .merch .bubble p {
+      margin-bottom: 0; }
+    .help .merch .bubble a img {
+      height: 150px;
+      width: auto; }
+  .help .merch .copper {
+    float: right;
+    width: 48%; }
+
+.contact .wrr {
+  width: 100%; }
+  .contact .wrr .details {
+    float: left;
+    width: 40%; }
+  .contact .wrr img {
+    margin: 20px;
+    display: inline-block; }
+.contact .contactLocalVets {
+  width: 28%;
+  float: left;
+  padding: 20px; }
+  .contact .contactLocalVets .contact-box {
+    padding: 20px;
+    width: 80%; }
+.contact .contactLocalSuppliers {
+  width: 28%;
+  float: left;
+  padding: 20px; }
+  .contact .contactLocalSuppliers .contact-box {
+    padding: 20px;
+    width: 80%; }
+.contact .contactFarVets {
+  width: 28%;
+  float: left;
+  padding: 20px; }
+  .contact .contactFarVets .contact-box {
+    padding: 20px;
+    width: 80%; }
+
+.CallumPowell {
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 100%;
+  border: 2px dashed #222; }
 
 /*# sourceMappingURL=custom.css.map */
