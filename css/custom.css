@@ -1,170 +1,200 @@
-body {
-  margin: 0 auto;
-  padding: 20px 80px;
-  color: #222;
-  font-family: 'Open Sans'; }
+html {
+  height: 100%;
+  margin: 10px; }
+  html body {
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 100%; }
 
-.button {
-  background-color: red;
-  color: white;
-  padding: 8px 10px;
-  text-decoration: none;
-  border-radius: 4px; }
-  .button:hover {
-    color: #222; }
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both; }
 
-.header {
-  padding-right: 10px;
+.mast {
+  display: block;
   margin-bottom: 10px; }
-  .header #title {
-    float: right;
-    font-size: 4em;
+  .mast .title {
     font-family: 'Pacifico';
-    margin: auto; }
+    font-size: 20px;
+    display: inline;
+    float: right;
+    text-align: center;
+    width: 55%; }
+  .mast .logo {
+    float: left;
+    display: inline;
+    max-width: 40%; }
+  .mast:after {
+    clear: both;
+    content: '';
+    display: block; }
 
-.navigaiton {
-  background-color: red;
-  margin: 0; }
-  .navigaiton ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    text-align: left; }
-    .navigaiton ul li {
-      font-size: 16px;
+nav {
+  background-color: #ff1010;
+  width: 100%; }
+  nav .hamburger {
+    display: none; }
+  nav .menu {
+    margin: 10px;
+    padding: 0px; }
+  nav ul {
+    list-style: none;
+    margin: 0 auto; }
+    nav ul li {
       float: left;
-      display: inline;
-      padding: 20px 16px 5px 16px; }
-      .navigaiton ul li a {
-        color: #fff;
-        text-decoration: none;
-        padding: 20px 16px 5px 16px; }
-        .navigaiton ul li a:hover {
-          background-image: url(../img/rabbit_outline.png);
-          background-repeat: no-repeat;
-          background-position: center;
-          text-decoration: none; }
-
-.dot {
-  width: 100%;
-  height: 10px;
-  background-image: url("../img/dotted.png");
-  background-repeat: repeat-x;
-  margin-bottom: 20px; }
+      width: 20%; }
+      nav ul li a {
+        display: block;
+        padding: 15px;
+        font-size: 1em;
+        text-align: center;
+        color: #eee;
+        text-decoration: none; }
+        nav ul li a:hover {
+          background-color: #ff4444; }
 
 .content {
-  margin-bottom: 60px;
-  width: 100%;
-  min-height: 500px;
-  padding: 10px;
-  box-sizing: border-box; }
-
-.footer {
-  margin-bottom: 20px;
-  padding: 10px;
-  border-top: 1px solid #222;
-  clear: both;
-  position: static;
-  bottom: 0px;
-  right: 60px;
-  left: 40px; }
-  .footer p {
-    font-size: 0.5em;
-    color: #888;
-    float: right; }
+  padding: 20px 0 20px 50px;
+  margin-bottom: 50px; }
 
 .about img {
-  margin: 20px;
-  float: right;
-  display: inline-block; }
+  max-width: 100%;
+  float: right; }
 
-.adoption #policy {
-  margin-right: 20px;
-  float: left;
-  width: 48%; }
-.adoption #priceing {
-  float: right;
-  width: 48%; }
-.adoption #gallery {
-  padding: 0 40px;
-  width: 100%;
-  margin: auto; }
-  .adoption #gallery img {
-    width: 200px;
-    margin: 20px; }
-
-.help .giveALittle {
-  margin: 30px 60px;
-  float: left; }
-  .help .giveALittle a img {
-    height: 150px;
-    width: auto; }
-.help .bank {
-  margin: 30px 60px;
-  float: left; }
-.help .items {
-  margin: 30px 60px;
-  float: left; }
-.help .sponsor {
-  width: 100%;
-  clear: both; }
-  .help .sponsor .sponsorList {
-    margin: 0 60px;
-    float: left; }
-  .help .sponsor .sponsorDeet {
-    width: 50%;
-    float: left; }
-.help .fostering {
-  clear: both; }
-.help .merch {
-  margin: 60px 0; }
-  .help .merch .bubble {
-    width: 48%;
-    float: left; }
-    .help .merch .bubble p {
-      margin-bottom: 0; }
-    .help .merch .bubble a img {
-      height: 150px;
-      width: auto; }
-  .help .merch .copper {
-    float: right;
-    width: 48%; }
-
-.contact .wrr {
+.adoption {
   width: 100%; }
-  .contact .wrr .details {
-    float: left;
-    width: 40%; }
-  .contact .wrr img {
-    margin: 20px;
-    display: inline-block; }
-.contact .contactLocalVets {
-  width: 28%;
-  float: left;
-  padding: 20px; }
-  .contact .contactLocalVets .contact-box {
-    padding: 20px;
-    width: 80%; }
-.contact .contactLocalSuppliers {
-  width: 28%;
-  float: left;
-  padding: 20px; }
-  .contact .contactLocalSuppliers .contact-box {
-    padding: 20px;
-    width: 80%; }
-.contact .contactFarVets {
-  width: 28%;
-  float: left;
-  padding: 20px; }
-  .contact .contactFarVets .contact-box {
-    padding: 20px;
-    width: 80%; }
+  .adoption img {
+    max-width: 200px;
+    margin: 10px; }
+  .adoption #priceing {
+    max-width: 45%;
+    float: right; }
+  .adoption #policy {
+    max-width: 45%;
+    float: left; }
 
-.CallumPowell {
-  margin-bottom: 20px;
-  padding: 20px;
-  width: 100%;
-  border: 2px dashed #222; }
+.help .right {
+  float: right;
+  width: 30%; }
+  .help .right img {
+    max-width: 200px; }
+  .help .right h2 {
+    margin-bottom: 2px;
+    margin-top: 20px; }
+.help .left {
+  float: left;
+  width: 65%; }
+
+.contact {
+  padding: 0; }
+  .contact .wrr {
+    width: 80%;
+    margin: 50px auto;
+    text-align: center; }
+    .contact .wrr .details {
+      width: 50%;
+      margin: 0 auto;
+      display: block;
+      float: left; }
+    .contact .wrr img {
+      width: 50%;
+      display: block;
+      float: right; }
+  .contact .contact-box {
+    padding: 20px;
+    width: 100%; }
+    .contact .contact-box h3 {
+      margin-bottom: 0px; }
+    .contact .contact-box .button {
+      padding: 8px;
+      border-radius: 8px;
+      background-color: #ff1010;
+      color: #fff;
+      text-decoration: none; }
+      .contact .contact-box .button:hover {
+        background-color: #ff4444; }
+
+.footer {
+  border-top: 1px solid #eee;
+  position: fixed;
+  background-color: white;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+  .footer .copyright {
+    float: right;
+    font-size: 10px; }
+  .footer .callum_powell {
+    float: left;
+    font-size: 10px;
+    width: 110px;
+    padding: 10px; }
+    .footer .callum_powell p {
+      width: 85px;
+      margin: 0px;
+      display: inline-block; }
+    .footer .callum_powell img {
+      float: right;
+      height: 20px; }
+
+@media only screen and (max-width: 600px) {
+  .mast .title {
+    font-size: 16px; }
+  .mast .logo img {
+    margin-top: 22px;
+    width: 100px; }
+
+  nav {
+    background-color: white; }
+    nav .menu {
+      margin: 0;
+      height: 0px;
+      overflow: hidden;
+      transition: height 0.3s; }
+    nav .hamburger {
+      display: block;
+      cursor: pointer;
+      padding: 10px;
+      text-align: center;
+      background-color: #ff1010;
+      color: #eee; }
+    nav ul li {
+      background-color: #eee;
+      width: 100%; }
+      nav ul li a {
+        color: #222; }
+    nav .open {
+      height: 260px; }
+
+  .adoption img {
+    max-width: 90%; }
+  .adoption #priceing {
+    max-width: 100%;
+    margin: 0 auto; }
+  .adoption #policy {
+    max-width: 100%;
+    margin: 0 auto; }
+
+  .help .right {
+    width: 90%; }
+  .help .left {
+    width: 90%; }
+
+  .contact .wrr {
+    width: 100%; }
+    .contact .wrr .details {
+      width: 80%;
+      margin: 0 auto;
+      display: block;
+      float: none; }
+    .contact .wrr img {
+      width: 80%;
+      margin: 0 auto;
+      display: block;
+      clear: both;
+      float: none; } }
 
 /*# sourceMappingURL=custom.css.map */
